@@ -22,7 +22,14 @@
             ],
             "js": [
                 "js/content.js"
+            ],
+            "css": [
+                "css/style.css"
             ]
         }
+    ],
+    "permissions": [
+        "storage",
+        "tabs"
     ]
 }

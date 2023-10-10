@@ -1,11 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        @font-face {
+            font-family: nasalization;
+            src: url(../font/nasalization-rg.otf);
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: nasalization;
+        }
+
+        main {
+            width: 250px;
+            height: 350px;
+            border: 1px solid black;
+        }
+
+        .button-img {
+            width: 100%;
+            text-align: center;
+            padding-top: 25%;
+        }
+
+        .button-img img {
+            width: 35%;
+            margin: 0px auto 20px auto;
+            display: block;
+
+        }
+
+        .button {
+            display: inline-block;
+            padding: 2% 30%;
+        }
+
+        a {
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        h1 {
+            font-size: 20px;
+            background: green;
+            margin: 7px 10px;
+            color: white;
+            padding: 5px 0px;
+        }
+
+        .gray{
+            filter: grayscale(100%);
+        }
+
+        .button-bg-green{
+            color: rgb(131, 0, 0);
+            background-color: rgb(149 251 149);
+        }
+
+        .button-bg-red{
+            color: rgb(0 131 0);
+            background-color: rgb(251, 149, 149);
+        }
+    </style>
 </head>
+
 <body>
-    Hello World!
+    <main>
+        <div class="button-img">
+            <img id="powerImage" class="gray" src="../icons/icon-128.png" alt="">
+            <a class="button button-bg-green" href="#" id="powerButton">ON</a>
+            <h1>Focus Facebook</h1>
+            <p>Status: <span id="status"></span></p>
+        </div>
+    </main>
+
+
+    <script src="../js/popup.js"></script>
 </body>
+
 </html>
